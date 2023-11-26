@@ -15,6 +15,9 @@ public class LivingThing {
     public int getHitPoint(){
         return hitPoint;
     }
+    public int getAttack(){
+        return attack;
+    }
     LivingThing(String name, int hitPoint,int attack){
         this.name = name;
         this.hitPoint = hitPoint;
