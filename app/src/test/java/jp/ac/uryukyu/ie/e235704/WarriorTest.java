@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WarriorTest {
     @Test
-    private int AfterAttack(int initialHp, int attackDamage, int numAttacks) {
+    public int AfterAttack(int initialHp, int attackDamage, int numAttacks) {
         return initialHp - (int) (1.5 * attackDamage) * numAttacks;
     }
-    void attackTest() {
+    public void attackTest() {
         int defaultHeroHp = 100;
         Warrior demoWarrior = new Warrior("デモ勇者", defaultHeroHp, 100);
         Enemy slime = new Enemy("スライムもどき", 10, 100);
